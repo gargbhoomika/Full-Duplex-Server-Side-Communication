@@ -41,6 +41,8 @@ public class fullduplexchattingtool
 		try
 		{
 			sc = new Scanner(System.in);
+			String iplocal = InetAddress.getLocalHost().getHostAddress(); 
+			System.out.println("Inform client about your IP: "+iplocal);
 			System.out.println("Enter the same port number as client: ");
 			int port = sc.nextInt();
 			ss = new ServerSocket(port);
